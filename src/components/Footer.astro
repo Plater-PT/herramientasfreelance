@@ -5,6 +5,9 @@ const today = new Date();
 
 <footer>
 	<p>&copy; {today.getFullYear()} {SITE_TITLE}. Todos los derechos reservados.</p>
+	<p class="legal-links">
+	<a href="/privacidad">Política de Privacidad</a> · <a href="/aviso-legal">Aviso Legal</a>
+</p>
 </footer>
 <style>
 	footer {
@@ -17,4 +20,11 @@ const today = new Date();
 	footer p {
 		margin: 0;
 	}
+	.legal-links {
+	margin-top: 0.5em;
+	font-size: 0.85em;
+}
+.legal-links a {
+	color: rgb(var(--gray));
+}
 </style>
