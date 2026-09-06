@@ -57,6 +57,7 @@ const posts = (await getCollection('blog')).sort(
 <style>
 	main {
 		max-width: 64rem;
+		overflow-x: hidden;
 	}
 
 	.banner {
@@ -136,6 +137,10 @@ const posts = (await getCollection('blog')).sort(
 	@media (max-width: 40rem) {
 		.banner {
 			padding: 2rem 1.5rem;
+		}
+
+		.grid {
+			grid-template-columns: 1fr;
 		}
 	}
 </style>
